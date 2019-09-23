@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/con', function () {
+    return view('contacto_ladingpage');
+});
+
+Route::get('/hola',function(){ 
+    //'HOLS MUNDO';  
+    return view('lading-page');
+
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
